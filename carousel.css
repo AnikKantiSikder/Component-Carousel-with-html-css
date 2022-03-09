@@ -21,9 +21,10 @@ body {
     padding: 32px;
     padding-left: 86px;
     border-radius: 8px;
+
     display: flex;
-    align-items: center;
     gap: 84px;
+    position: relative;
 }
 img {
     height: 200px;
@@ -32,9 +33,7 @@ img {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
-.testimonial {
 
-}
 .testimonial-text {
     font-size: 18px;
     font-weight: 500;
@@ -52,8 +51,33 @@ img {
     color: #c3fae8;
 }
 .btn {
-
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    /* Centering the icons using flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 .btn-icon {
+    height: 24px;
+    width: 24px;
+    stroke: #087F5B;
+}
 
+.btn--left {
+    left: 0;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.btn--right {
+    right: 0;
+    top: 50%;
+    transform: translate(50% ,-50%);
 }
